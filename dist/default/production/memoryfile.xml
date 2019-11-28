@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/production/CAL_TEST2-master.production.elf">
+  <executable name="dist/default/production/CALSL.production.elf">
     <memory name="data">
       <units>bytes</units>
       <length>16384</length>
-      <used>58</used>
-      <free>16326</free>
+      <used>62</used>
+      <free>16322</free>
     </memory>
     <memory name="program">
       <units>bytes</units>
       <length>131328</length>
-      <used>8172</used>
-      <free>123156</free>
+      <used>8502</used>
+      <free>122826</free>
     </memory>
   </executable>
 </project>

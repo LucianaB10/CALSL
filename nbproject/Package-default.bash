@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/CAL_TEST2-master.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=CAL_TEST2-master.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=caltest2-master/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/CALSL.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=CALSL.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=calsl/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/caltest2-master/bin
+makeDirectory ${TMPDIR}/calsl/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/caltest2-master.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/calsl.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/caltest2-master.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/calsl.tar *
 checkReturnCode
 
 # Cleanup

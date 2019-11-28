@@ -13,4 +13,6 @@ mcal_spi.h  \
 mcal_timers.h  \
  mcal_encoder.h  \
 asw_com.h  \
-led.h 
+led.h  \
+asw_move.h  \
+hal_servo.h 
