@@ -1,8 +1,8 @@
 build/default/production/asw_move.o:  \
 asw_move.c  \
-asw_move.h  \
 sys_tasks.h  \
- rte.h  \
-hal_dc.h  \
+rte.h  \
+ hal_dc.h  \
 general_types.h  \
-hal_servo.h 
+hal_servo.h  \
+asw_move.h 

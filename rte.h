@@ -15,6 +15,10 @@
 #define RTE_vSetMotorDir HAL_vSetMotorDir
 #define RTE_vSetMotorSpeed HAL_vSetMotorSpeed
 #define RTE_vsetAngle Hal_setAngle
+
+#define RTE_vSetDirLineFollower  HAL_vSetDirLineFollower
+#define RTE_vWriteLineFollower   HAL_vWriteLineFollower
+#define RTE_u8GetValueLineFollower HAL_u8GetValueLineFollower
 #endif
 
 

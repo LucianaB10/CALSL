@@ -14,5 +14,8 @@ mcal_timers.h  \
  mcal_encoder.h  \
 asw_com.h  \
 led.h  \
+hal_linefollower.h  \
 asw_move.h  \
-hal_servo.h 
+hal_servo.h  \
+ rte.h  \
+hal_dc.h 
