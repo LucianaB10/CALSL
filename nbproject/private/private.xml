@@ -3,17 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/asw_move.h</file>
             <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/asw_move.c</file>
+            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/hal_linefollower.c</file>
             <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/sys_tasks.c</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/asw_com.c</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/mcal_init.c</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/hal_servo.h</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/hal_servo.c</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/general_types.h</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/rte.h</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/hal_dc.h</file>
-            <file>file:/C:/Users/student/Desktop/Cal%20lab/CALSL/hal_dc.c</file>
         </group>
     </open-files>
 </project-private>

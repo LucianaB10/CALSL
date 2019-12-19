@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/production/CALSL.production.elf">
+  <executable name="dist/default/debug/CALSL.debug.elf">
     <memory name="data">
       <units>bytes</units>
       <length>16384</length>
-      <used>62</used>
-      <free>16322</free>
+      <used>142</used>
+      <free>16242</free>
     </memory>
     <memory name="program">
       <units>bytes</units>

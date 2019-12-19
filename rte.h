@@ -7,6 +7,7 @@
 
 #include "hal_dc.h"
 #include "hal_servo.h"
+#include "hal_linefollower.h"
 #ifndef RTE_H
 #define	RTE_H
 

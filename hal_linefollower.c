@@ -25,10 +25,14 @@ void HAL_vWriteLineFollower()
 
 T_U8 HAL_u8GetValueLineFollower()
 {
+    T_U8 valculoare;
     HAL_vSetDirLineFollower(OUTPUT);
     HAL_vWriteLineFollower();
     __delay_us(10);
     HAL_vSetDirLineFollower(INPUT);
-    __delay_us(250);
-    return GPIO_u16ReadPort(PORT_C) &  0b111111;
+    __delay_us(1000);
+    
+    valculoare = GPIO_u16ReadPort(PORT_C) & 63;
+    
+    return valculoare;
 }
