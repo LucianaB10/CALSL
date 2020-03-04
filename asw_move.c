@@ -1,6 +1,9 @@
+#include "asw_move.h"
 #include "sys_tasks.h"
 #include "rte.h"
-#include "asw_move.h"
+#include "hal_encoderdist.h"
+#include "general_types.h"
+
 
 
 
@@ -9,25 +12,33 @@ void ASW_Init(){
     RTE_vInit();
 }
 
-void ASW_Move(T_U8 speedV, BOOL dir){
-    T_U8 val;
-    RTE_vSetMotorDir(dir);
-    RTE_vSetMotorSpeed(speedV);
-    
-    val = RTE_u8GetValueLineFollower();
-   if (val > 50 )
-   {
-       RTE_vsetAngle(70);
-           
-   }
-   else 
-   {
-       RTE_vsetAngle(110);  
-   }
+void ASW_Move(){
+    RTE_vSetMotorDir();
+    RTE_vSetMotorSpeed(50);
 }
 
+void bateryLed()
+{
+    T_U8 batPrc = hal_batteryRead();
+    S2(batPrc);
+}
 
-
+T_F16 HAL_CmSTOP(void)
+{
+    static T_F16 y=0;
+    y+=HAL_F16distanceMoved();
+    if (y<10)
+    {
+        RTE_vSetMotorSpeed(50);
+    }
+    else
+    {
+         RTE_vSetMotorSpeed(0);
+    }
+        
+    
+        return y;
+}
 
 
 

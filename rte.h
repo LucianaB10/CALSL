@@ -7,7 +7,8 @@
 
 #include "hal_dc.h"
 #include "hal_servo.h"
-#include "hal_linefollower.h"
+#include "led.h"
+#include "hal_battery.h"
 #ifndef RTE_H
 #define	RTE_H
 
@@ -16,10 +17,11 @@
 #define RTE_vSetMotorDir HAL_vSetMotorDir
 #define RTE_vSetMotorSpeed HAL_vSetMotorSpeed
 #define RTE_vsetAngle Hal_setAngle
-
-#define RTE_vSetDirLineFollower  HAL_vSetDirLineFollower
-#define RTE_vWriteLineFollower   HAL_vWriteLineFollower
-#define RTE_u8GetValueLineFollower HAL_u8GetValueLineFollower
+#define RTE_batteryRead  hal_batteryRead 
+#define RTE_test test
+#define RTE_S2 S2
+#define RTE_HAL_F16distanceMoved HAL_F16distanceMoved
+#define RTE_HAL_CmSTOP  HAL_CmSTOP
 #endif
 
 

@@ -56,5 +56,16 @@ void QEI_vResetCount()
 }
 
 
+T_S16 QEI_S16getElapsed()
+{
+    T_S16 S16Count;
+    S16Count=QEI_u16getCount();
+    S16Count-=32000;
+     QEI_vResetCount();
+     return S16Count;
+    
+}
+
+
 
 

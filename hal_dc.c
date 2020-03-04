@@ -6,12 +6,12 @@
 void HAL_vInit()
 {
     PWM1_vInit();
-    GPIO_u8SetPortPin(PORT_A,9,DIGITAL,OUTPUT);
+    GPIO_u8SetPortPin(PORT_A,9,ANALOG,OUTPUT);
 }
-void HAL_vSetMotorDir(BOOL dir){
-    GPIO_u8WritePortPin(PORT_A,9,dir);
+void HAL_vSetMotorDir(){
+    GPIO_u8WritePortPin(PORT_A,9,0);
 }
 
 void HAL_vSetMotorSpeed(T_U8 speed){
-    PWM1_vSetDuty(speed,2);
+    PWM2_vSetDuty(speed);
 }

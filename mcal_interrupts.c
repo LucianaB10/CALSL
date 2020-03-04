@@ -8,14 +8,37 @@
 /* RF Interrupt Request Flag, set in INT2 by the nRF24L01 module*/
 extern BOOL bRF_IRQ;
 
-
+BOOL flag;
 /* Obstacle sensor interrupt */
 /*****************************/
 void __attribute__((__interrupt__, no_auto_psv)) _INT0Interrupt(void)
 {
-    /* Write the code to detect obstacle */
+    IFS0bits.INT0IF=0;
+     if(INTCON2bits.INT0EP==NEG_EDGE)
+    {
+        flag=1;
+    }
+    else
+        if(INTCON2bits.INT0EP==POS_EDGE)
+        {
+            flag=0;
+        }
+    int_INT0SetPolarity();
+}
+BOOL int_vINT0GetPolarity()
+{
+    return INTCON2bits.INT0EP;
+   
 }
 
+void int_INT0SetPolarity()
+{
+    if(int_vINT0GetPolarity()==POS_EDGE)
+        flag=NEG_EDGE;
+    else
+        flag=POS_EDGE;
+    
+}
 
 void __attribute__((__interrupt__, no_auto_psv)) _INT1Interrupt(void)
 {

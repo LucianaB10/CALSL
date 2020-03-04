@@ -4,15 +4,13 @@
  *
  * Created on November 21, 2019, 6:20 PM
  */
-
+#include "general_types.h"
 #ifndef ASW_MOVE_H
 #define	ASW_MOVE_H
-
-#define FORWARD     0
-#define BACKWARD    1
-
+ 
 void ASW_Init();
-void ASW_Move(T_U8 speedV, BOOL dir);
+void ASW_Move();
+T_F16 HAL_CmSTOP(void);
 
 #endif	/* ASW_MOVE_H */
 

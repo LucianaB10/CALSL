@@ -25,7 +25,8 @@ void INT2_vInit(T_U8);
 void __attribute__((__interrupt__, no_auto_psv)) _INT0Interrupt(void);
 void __attribute__((__interrupt__, no_auto_psv)) _INT1Interrupt(void);
 void __attribute__((__interrupt__, no_auto_psv)) _INT2Interrupt(void);
-
+BOOL int_vINT0GetPolarity();
+void int_INT0SetPolarity();
 
 #endif	/* MCAL_INTERRUPTS_H */
 
